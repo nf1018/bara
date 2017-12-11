@@ -3,7 +3,15 @@
 <head>
   <title>Bara</title>
 </head>
-<body background="giphy.gif">
-  
+<body>
+  body{height:100%;
+   width:100%;
+   background-image:url(giphy.gif); 
+   background-repeat:no-repeat; 
+   background-size:cover; 
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.giphy.gif',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='giphy.gif',sizingMethod='scale')";
+}
   </body>
 </html>
